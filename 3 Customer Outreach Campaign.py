@@ -9,6 +9,7 @@ warnings.filterwarnings('ignore')
 
 openai_api_key = os.environ.get("OPEN_AI_KEY")
 os.environ["OPENAI_MODEL_NAME"] = os.environ.get("OPENAI_API_MODEL")
+os.environ["SERPER_API_KEY"] = os.environ.get("OPENAI_API_MODEL")
 
 sales_rep_agent = Agent(
     role="Sales Representative",
